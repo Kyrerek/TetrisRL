@@ -25,9 +25,9 @@ class InputHandler:
         match key_code:        
             case pygame.K_LEFT: return 0 # left
             case pygame.K_RIGHT: return 1 # right
-            case pygame.K_DOWN: return 2 # faster down 
-            case pygame.K_UP: return 3 # rotation
-            case pygame.K_z: return 4 # rotation
-            case pygame.K_SPACE: return 5 # instant down
+            case pygame.K_DOWN: return 2 # soft drop
+            case pygame.K_UP: return 3 # rotate clockwise
+            case pygame.K_z: return 4 # rotate counter-clockwise
+            case pygame.K_SPACE: return 5 # hard drop
             case pygame.K_c | pygame.K_LSHIFT: return 6 # hold and change 
-            case _: return 7
+            case _: return 7 #no-operation
